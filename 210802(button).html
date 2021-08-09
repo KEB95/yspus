@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>210802-003-button</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            /* box-sizing: border-box; */
+        }
+        body{
+            margin: 10px;
+            padding: 10px;
+        }
+        .container{
+            margin-top: 35px;
+        }
+       p{
+           width: 200px;
+           height: 200px;
+       }
+    </style>
+    <script>
+        $(function(){
+            $(".btn1").click(function(){
+                $("p").slideUp();
+            });
+            $(".btn2").click(function(){
+                $("p").slideDown();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button class="btn1">버튼1</button><button class="btn2">버튼2</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aliquam sed harum? 
+        Repellat commodi asperiores, corporis harum mollitia impedit accusamus aut ex,
+         excepturi pariatur quasi nostrum! Sint atque quia nesciunt?</p>
+</body>
+
+</html>
